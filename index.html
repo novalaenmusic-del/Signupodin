@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-up Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="left">
+        <div class="box">
+            <img src="./img/odin-logo.png" alt="logo" id="logo">
+            <h1>ODIN</h1>
+        </div>
+        <p id="credit">Photo by <u>Halie West</u> on <u>Unsplash</u></p>
+    </div>
+    <div class="right">
+        <p class="top">This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <i>now</i> to get started.</p>
+        <p class="top" id="bott">You <i>know</i> you want to.</p>
+        <div class="inp">
+            <p>Let's do this!</p>
+            <form>
+                <div>
+                    <label for="fname">FIRST NAME</label>
+                    <input type="text" id="fname" name="firstName" required>
+                </div>
+                <div>
+                    <label for="lname">LAST NAME</label>
+                    <input type="text" id="lname" name="lastName" required>
+                </div>
+                <div>
+                    <label for="email">EMAIL</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div>
+                    <label for="phone">PHONE NUMBER</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                <div>
+                    <label for="pass1">PASSWORD</label>
+                    <input type="password" id="pass1" name="password" class="pass" minlength="4" required>
+                </div>
+                <div>
+                    <label for="pass2">CONFIRM PASSWORD</label>
+                    <input type="password" id="pass2" name="confirmPassword" class="pass" minlength="4" required>
+                </div>
+                <button type="submit" id="hide">Create Account</button>
+            </form>
+        </div>
+        <div class="but">
+            <button id="sub">Create Account</button>
+            <p>Already have an account? <span id="green">Log in</span></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
